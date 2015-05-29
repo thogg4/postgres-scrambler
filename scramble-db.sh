@@ -16,7 +16,7 @@ echo "Dumping remote posgres"
 pg_dump -U $POSTGRES_USER -h $POSTGRES_HOST -d $POSTGRES_DB -f dump.sql
 
 echo "Loading db dump into local postgres"
-psql -U $POSTGRES_USER -h localhost -d $POSTGRES_DB -f /script/dump.sql
+psql -U $POSTGRES_USER -h localhost -d $POSTGRES_DB -f dump.sql
 
 echo "Running your script on local postgres"
 psql -U $POSTGRES_USER -h localhost -d $POSTGRES_DB -f /script/scramble-db.sql
