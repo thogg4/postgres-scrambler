@@ -1,4 +1,5 @@
-=== Set Up
+Set Up
+======
 
 It's easiest to set scrambler up using docker-compose.
 Here is an example docker-compose.yml file:
